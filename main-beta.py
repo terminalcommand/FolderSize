@@ -51,6 +51,8 @@ def renamedir(startpath=os.curdir):
 
 for root, dirs, files in os.walk(os.curdir, topdown=True):
     rootname = os.getcwd()
+    renamedir()
+    rootname = os.getcwd()
     for folder in dirs:
         folderpath=join(rootname,folder)
         os.chdir(folderpath)
