@@ -42,7 +42,7 @@ def renamedir(startpath=os.curdir):
         cleared = clearsize(rootname)
         #        print("Rootname: "+ rootname)
         #        print("Cleared: "+cleared)
-        os.rename(rootname, cleared+desc)
+        os.replace(rootname, cleared+desc)
 
         print("Successfully renamed dir to", cleared+desc)
        
